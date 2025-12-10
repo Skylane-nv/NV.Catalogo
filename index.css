@@ -1,0 +1,87 @@
+/* CSS moderno para página inicial do catálogo */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img-fundos/icone.jpeg'); /* caminho da imagem */
+    background-size: cover;                  /* ajusta para preencher */
+    background-position: center;             /* centraliza */
+    background-repeat: no-repeat;            /* não repete */
+    background-attachment: fixed;            /* deixa FIXA */
+}
+
+.topo{
+  text-align:center;
+  padding:25px 0;
+  font-size:28px;
+  font-weight:700;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.container{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.box{
+  width:380px;
+  padding:35px;
+  text-align:center;
+  border-radius:15px;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(12px);
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.box h2{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.box p{
+  font-size:15px;
+  opacity:0.8;
+  margin-bottom:25px;
+}
+
+.btn{
+  padding:14px 20px;
+  width:100%;
+  border:none;
+  border-radius:12px;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+  color:#000;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Responsividade */
+@media(max-width:450px){
+  .box{
+    width:90%;
+    padding:25px;
+  }
+  .topo{
+    font-size:24px;
+  }
+}
